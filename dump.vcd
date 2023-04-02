@@ -1,0 +1,39 @@
+$date
+	Mon Apr 03 02:02:09 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 8 ! result [7:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 3 $ optr [2:0] $end
+$var integer 32 % fd [31:0] $end
+$scope module AA $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 3 ( optr [2:0] $end
+$var reg 8 ) result [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010 )
+b111 (
+b1010 '
+b1000 &
+b10000000000000000000000000000011 %
+b111 $
+b1010 #
+b1000 "
+b1010 !
+$end
+#5
