@@ -1,2 +1,2 @@
 # ECN-252_Calculator
-Calculator implementation in verilog for performing various arithmetic functions.
+Calculator implementation in verilog for performing various arithmetic calculations.
