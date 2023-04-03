@@ -1,1 +1,1 @@
- 10
+Error: division by zero

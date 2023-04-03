@@ -17,8 +17,8 @@ module tb ();
     fd = $fopen("vercal.txt", "w");  
     //result =8'b0;
     a = 4'b1000;
-    b = 4'b1010;
-    optr = 3'b111;
+    b = 4'b0000;
+    optr = 3'b011;
     
     if(optr==3'b001 && (a<b))
         begin
@@ -28,6 +28,15 @@ module tb ();
             $fwrite(fd, "-%d", result);  
             //$fclose(fd);
         end
+
+    if(optr==3'b011 && b==0)
+      begin
+        $monitor ("Error: division by zero");
+            //$fdisplay(fd, result); 
+            #5 
+            $fwrite(fd, "Error: division by zero");  
+            //$fclose(fd);
+      end
 
     else
         begin

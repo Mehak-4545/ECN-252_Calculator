@@ -47,7 +47,7 @@ int main(){
     else if(op=="*") fout<<"  "<<multiply(num1,num2);
     else if(op=="/") {
         if(num2==0){
-            cout<<"Error: division by zero";
+            fout<<"Error: division by zero";
         }else
         fout<<"  "<<divide(num1,num2);
     }
@@ -56,7 +56,7 @@ int main(){
     else if(op=="|") fout<<"  "<<OR(num1,num2);
     else if(op=="&") fout<<"  "<<AND(num1,num2);
     else{
-        cout<<"Error: invalid operator";
+        fout<<"Error: invalid operator";
     }
     // cout<<"Do you want to compute again? (y/n)";
     // cin>>answer;
